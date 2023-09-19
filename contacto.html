@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header id="main-header">
+		<nav>
+			<ul>
+				<li><a href="inicio.html">Información General</a></li>
+				<li><a href="tablaAlumno.html">¡Apuntate!</a></li>
+				<li><a href="contacto.html">Contacta con nosotros</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!--Formulario para contactar-->
+    <form method="get" action="https://iesjacaranda.es/lmsgi/resultado.php">
+		<fieldset>
+		  <legend>Contacto</legend>
+			DNI *<br><input type='text' name='dni' required><br>
+			Nombre *<br><input type='text' name='nombre' required><br>
+			Apellidos *<br><input type='text' name='apellidos' required><br>
+			Email *<br><input type='text' name='email' required><br>
+		
+			<br>
+			<select name='sexo'>
+				<option value='otro'>Otro</option>
+			  	<option value='mujer'>Mujer</option>
+			  	<option value='hombre'>Hombre</option>
+			</select>
+
+			<input type='radio' name='tipocomunicacio' value='duda'> Duda 
+			<input type='radio' name='tipocomunicacio' value='problema'> Problema <br>
+			<br>
+
+			Elija una fecha:<input type="date"><br>
+		  	<br>
+		 	
+			<textarea rows='8' cols='56'>Inserte su motivo.</textarea><br>
+			<div class="bot">
+				<input type="submit" value="Enviar formulario">
+				<input type="reset" value="Borrar formulario">
+			</div>
+		</fieldset>
+	</form>
+    <footer>
+        <p class="text-center">Evaluacion Inicial 2023-2024.</p>
+    </footer>
+</body>
